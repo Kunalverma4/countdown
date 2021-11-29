@@ -225,3 +225,21 @@ Countdown Timer
   margin-bottom: 0.25rem;
   letter-spacing: var(--spacing);
 }
+.expire {
+  border: 1px splid black;
+  display: none;
+}
+.show-expire {
+  display: block;
+  background: var(--clr-grey-1);
+  color: var(--clr-white);
+  margin-right: 1.5rem;
+  width: 150px;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.deadline-hide {
+  display: none;
+}

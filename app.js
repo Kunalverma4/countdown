@@ -1,4 +1,4 @@
-var countDownDate = new Date("dec 4, 2021 22:00:00").getTime();
+var countDownDate = new Date("dec 3, 2021 14:34:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -24,6 +24,10 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (timeLeft < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "GIVEAWAY-EXPIRED";
+    const show = document.querySelector(".expire")
+    const deadline = document.querySelector('.deadline')
+    show.classList.add('show-expire')
+    show.innerHTML = "GIVEAWAY-EXPIRED";
+    deadline.classList.add('deadline-hide')
   }
 }, 1000);
